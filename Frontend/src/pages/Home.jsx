@@ -58,6 +58,19 @@ const HomePage = () => {
           />
         </div>
       </div>
+
+      {/* YouTube Video embedded at the right bottom */}
+      <div className="fixed bottom-4 right-4 w-[320px] h-[180px] z-50">
+        <iframe
+          width="100%"
+          height="100%"
+          src="https://www.youtube.com/embed/BzoT5LfSeyI"
+          allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+          allowFullScreen
+          title="YouTube Video"
+        ></iframe>
+      </div>
+
     </div>
   );
 };
