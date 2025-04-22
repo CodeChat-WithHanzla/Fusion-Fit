@@ -165,7 +165,7 @@ const ListProductForm = () => {
                             className="mt-1 block w-full p-2 border border-gray-300 rounded-md"
                         >
                             <option value="hourglass">Hourglass</option>
-                            <option value="Pear">Pear</option>
+                            <option value="pear">Pear</option>
                             <option value="apple">Apple</option>
                             <option value="rectangle">Rectangle</option>
                             <option value="inverted triangle">Inverted Triangle</option>

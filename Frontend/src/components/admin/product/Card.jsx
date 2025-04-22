@@ -16,6 +16,10 @@ const ProductCard = ({ product }) => {
           <span className="text-sm text-gray-500">Target Body Type: </span>
           <span className="text-sm font-medium text-gray-700">{product?.targetShapes[0].toUpperCase()}</span>
         </div>
+        <div className="mt-4">
+          <span className="text-sm text-gray-500">Type: </span>
+          <span className="text-sm font-medium text-gray-700">{product?.type.toUpperCase()}</span>
+        </div>
         <div className="mt-2">
           <span className="text-sm text-gray-500">Stock: </span>
           <span
