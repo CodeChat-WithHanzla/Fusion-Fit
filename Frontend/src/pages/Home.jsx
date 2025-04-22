@@ -4,7 +4,7 @@ import Filters from "../components/home/Filters";
 import Sorting from "../components/home/Sorting";
 import Pagination from "../components/home/Pagination";
 import { fetchProducts } from "../components/home/services/api";
-
+import img from "../assets/bg.jpg"
 const HomePage = () => {
   const [products, setProducts] = useState([]);
   const [totalPages, setTotalPages] = useState(1);
@@ -28,6 +28,7 @@ const HomePage = () => {
 
   return (
     <div className="bg-gray-50 min-h-screen">
+      <img src={img} alt="Banner" className="w-screen h-[34rem] object-cover" />
       <div className="container mx-auto px-4 py-8">
         {/* Filters and Sorting Section */}
         <div className="bg-white p-6 rounded-lg shadow-md flex flex-col md:flex-row items-center justify-between gap-6 mb-8">
