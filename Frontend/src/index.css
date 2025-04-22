@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.search-results-page {
+    font-family: 'Inter', sans-serif;
+  }
+  
+  .products-grid img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  button {
+    transition: background-color 0.2s ease-in-out;
+  }
+  

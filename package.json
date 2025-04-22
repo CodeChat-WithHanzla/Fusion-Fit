@@ -1,0 +1,17 @@
+{
+  "name": "full-stack-watch-ecommerce-store",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "Client": "cd Frontend && npm run dev",
+    "Server": "cd Server && npm start",
+    "app": "concurrently \"npm run Client\" \"npm run Server\""
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "concurrently": "^9.1.2"
+  }
+}
