@@ -195,8 +195,15 @@ exports.getProductById = asyncHandler(async (req, res, next) => {
 exports.updateProduct = asyncHandler(async (req, res, next) => {
   try {
     const { id } = req.params;
-    const { name, description, price, category, stock, deletedImages } =
-      req.body;
+    const {
+      name,
+      description,
+      price,
+      type,
+      targetShapes,
+      stock,
+      deletedImages
+    } = req.body;
     // Find the product by ID
     const product = await Product.findById(id);
     if (!product) {
@@ -263,7 +270,8 @@ exports.updateProduct = asyncHandler(async (req, res, next) => {
     if (name) product.name = name;
     if (description) product.description = description;
     if (price) product.price = price;
-    if (category) product.category = category;
+    if (type) product.type = type;
+    if (targetShapes) product.targetShapes = targetShapes;
     if (stock) product.stock = stock;
 
     product.updatedAt = Date.now();
