@@ -55,6 +55,12 @@ const Header = () => {
                                 <Link to="/" className="text-xl md:text-2xl font-bold hover:text-yellow-300 shrink-0">
                                     <span className="text-[#FFD700]">Fusion Fit</span>
                                 </Link>
+                                <Link
+                                    to="/measure"
+                                    className="hidden sm:inline-block bg-[#FFD700] text-[#0A1128] px-3 py-2 rounded-md font-medium hover:bg-yellow-400 transition ml-4 sm:ml-8 lg:ml-16"
+                                >
+                                    Find your body shape
+                                </Link>
                             </>
                         )}
 
@@ -254,6 +260,13 @@ const Header = () => {
                                         showSuccess={showSuccess}
                                     />
                                     {auth.user.name}
+                                    <Link
+                                        to="/measure"
+                                        className="block text-center bg-[#FFD700] text-[#0A1128] px-4 py-2 rounded-md font-medium hover:bg-yellow-400 transition"
+                                        onClick={() => setIsMenuOpen(false)}
+                                    >
+                                        Find your body shape
+                                    </Link>
                                 </div>
                             ) : (
                                 <div className="flex flex-col space-y-2 px-2">

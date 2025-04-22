@@ -19,6 +19,7 @@ import SearchResults from './pages/SearchResult';
 import CheckoutPage from './pages/Checkout';
 import OrderConfirmation from './pages/OrderConfirmation';
 import MyOrdersPage from './pages/MyOrders';
+import MeasurementPage from './pages/Measurement';
 
 const App = () => {
   return (
@@ -34,6 +35,7 @@ const App = () => {
             <Route path="/reset-password/:token" element={<AuthRedirect><ResetPassword /> </AuthRedirect>} />
             <Route path="/verify-email/:token" element={<AuthRedirect><VerifyEmail /></AuthRedirect>} />
             <Route path="/" element={<PrivateRoute allowedRoles={['customer']}><Home /></PrivateRoute>} />
+            <Route path="/measure" element={<MeasurementPage />} />
             <Route path="/product/:id" element={< ProductDetail />} />
             <Route path="/cart" element={<Cart />} />
             <Route path="/order-confirmation/:orderId" element={<OrderConfirmation />} />
