@@ -55,7 +55,7 @@ const SignUp = () => {
 
     const success = await signup(formData); // Capture success flag
     if (success) {
-      showSuccess("Signup successful. You can now log in."); 
+      showSuccess("Signup successful. You can now log in.");
       navigate('/login'); // Navigate to login page on success
     } else {
       showError("Signup failed. Please try again.");
@@ -66,7 +66,7 @@ const SignUp = () => {
     <div className="min-h-screen bg-gray-400 flex items-center justify-center px-4">
       <div className="bg-[#FFFFF0] shadow-lg rounded-lg p-8 max-w-md w-full">
         <h2 className="text-2xl font-bold text-[#333333] text-center mb-6">
-          Create Your <span className="text-[#FFD700]">Watchtery</span> Account
+          Create Your <span className="text-[#FFD700]">Fusion Fit</span> Account
         </h2>
 
         {error && (
@@ -118,7 +118,7 @@ const SignUp = () => {
                 className="absolute inset-y-0 right-3 flex items-center cursor-pointer text-[#0A1128]"
                 onClick={() => setShowPassword(!showPassword)}
               >
-                {showPassword ?  <IoIosEye /> : <IoIosEyeOff />}
+                {showPassword ? <IoIosEye /> : <IoIosEyeOff />}
               </span>
             </div>
           </div>

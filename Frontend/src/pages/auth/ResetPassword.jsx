@@ -57,7 +57,7 @@ const ResetPassword = () => {
     <div className="min-h-[80vh] bg-gray-400 flex items-center justify-center px-4">
       <div className="bg-[#FFFFF0] shadow-lg rounded-lg p-8 max-w-md w-full">
         <h2 className="text-2xl font-bold text-[#333333] text-center mb-6">
-          Reset Your <span className="text-[#FFD700]">Watchtery</span> Password
+          Reset Your <span className="text-[#FFD700]">Fusion Fit</span> Password
         </h2>
 
         {/* Error or Success Message */}
@@ -81,7 +81,7 @@ const ResetPassword = () => {
                 className="absolute inset-y-0 right-3 flex items-center cursor-pointer text-[#0A1128]"
                 onClick={() => setShowNewPassword(!showNewPassword)}
               >
-                {showNewPassword ?  <IoIosEye /> : <IoIosEyeOff />}
+                {showNewPassword ? <IoIosEye /> : <IoIosEyeOff />}
               </span>
             </div>
           </div>
@@ -102,7 +102,7 @@ const ResetPassword = () => {
                 className="absolute inset-y-0 right-3 flex items-center cursor-pointer text-[#0A1128]"
                 onClick={() => setShowConfirmPassword(!showConfirmPassword)}
               >
-                {showConfirmPassword ?  <IoIosEye /> : <IoIosEyeOff />}
+                {showConfirmPassword ? <IoIosEye /> : <IoIosEyeOff />}
               </span>
             </div>
           </div>

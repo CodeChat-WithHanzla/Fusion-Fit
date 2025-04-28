@@ -63,7 +63,7 @@ const Login = () => {
     <div className="min-h-[80vh] bg-gray-400 flex items-center justify-center px-4">
       <div className="bg-[#FFFFF0] shadow-lg rounded-lg p-8 max-w-md w-full">
         <h2 className="text-2xl font-bold text-[#333333] text-center mb-6">
-          Welcome Back to <span className="text-[#FFD700]">Watchtery</span>
+          Welcome Back to <span className="text-[#FFD700]">Fusion Fit</span>
         </h2>
 
         {/* Error Message */}
